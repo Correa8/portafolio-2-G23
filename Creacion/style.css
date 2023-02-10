@@ -1,0 +1,453 @@
+:root {
+  --icon-color: #f1a600;
+  --body-color: #1f1d2c;
+  --containers-color: #242635;
+  --letter-color: #e5e5e5;
+  --nose-hahah: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  background-color: #1f1d2c;
+  margin: 0;
+}
+
+/*NAV*/
+#hero {
+  font-size: larger;
+  display: flex;
+  justify-content: end;
+  height: 10px;
+  width: 90%;
+  margin: 2px;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  gap: 2rem;
+  margin-top: 20px;
+}
+#hero a {
+  text-decoration: none;
+}
+#hero a:hover {
+  color: #f1a600;
+}
+#hero .casa {
+  color: #f1a600;
+  cursor: none;
+}
+#hero .navi {
+  color: #e5e5e5;
+}
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+  height: 630px;
+  /* overflow: hidden;*/
+}
+.one {
+  display: flex;
+  flex-direction: column;
+}
+.one h1 {
+  font-size: 60px;
+  height: 0px;
+  color: #ffffff;
+}
+.one .parrafo1 {
+  font-size: 30px;
+  height: 50px;
+  color: #ffffff;
+}
+.one .parrafo2 {
+  font-size: 30px;
+  color: #ffffff;
+}
+.one .parrafo2 .Coldiferent {
+  color: #f1a600;
+}
+.one .iconitos {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
+  position: relative;
+  right: 70px;
+}
+.one .icons {
+  color: #f1a600;
+}
+.padre .box {
+  height: 720px;
+  width: 415px;
+  background-color: #242635;
+  position: relative;
+  left: 29%;
+  margin-top: -122px;
+}
+.padre {
+  position: relative;
+}
+.padre .two img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 0%;
+  margin-top: 30px;
+  z-index: 10;
+}
+.box {
+  color: #242635;
+}
+
+/*MAIN*/
+/*ACERCA DE MI*/
+#acercami {
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+#acercami h2 {
+  font-size: 35px;
+  color: #ffffff;
+  padding: 30px;
+}
+#acercami .acerca-de-mi {
+  margin-top: -30px;
+  text-align: center;
+  font-size: 1rem;
+}
+#acercami p {
+  font-size: 19px;
+  color: #ffffff;
+}
+#acercami .boxing {
+  display: flex;
+  justify-content: space-evenly;
+}
+.boxing .name {
+  font-size: 28px;
+}
+.boxing .fecha {
+  font-size: 17px;
+  margin-top: -20px;
+}
+#acercami .box2 img {
+  height: 150px;
+  width: 180px;
+  font-size: 100%;
+}
+.yeii {
+  background-color: #242635;
+  height: 580px;
+}
+
+/*EXPERIENCIA*/
+#experiencia {
+  padding: 10px;
+  margin: 90px;
+  text-align: center;
+}
+#experiencia .box1 {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+#experiencia .box2 {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+}
+#experiencia .box3 {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+}
+#experiencia h2 {
+  color: #ffffff;
+  font-size: 35px;
+  height: 90px;
+}
+#experiencia .box1 .img {
+  height: 150px;
+}
+#experiencia .box2 .img {
+  height: 170px;
+}
+#experiencia .box3 .img {
+  height: 0px;
+}
+#experiencia .box1 .info {
+  color: #ffffff;
+  text-align: start;
+  position: relative;
+  left: -80px;
+  bottom: 40px;
+}
+#experiencia .box2 .info {
+  color: #ffffff;
+  text-align: start;
+  position: relative;
+  left: -90px;
+  bottom: 40px;
+}
+#experiencia .box3 .info {
+  color: #ffffff;
+  text-align: start;
+  position: relative;
+  left: -70px;
+  bottom: 40px;
+}
+#experiencia .box1 .info h3 {
+  font-size: 29px;
+  position: relative;
+  top: 25px;
+}
+#experiencia .box2 .info h3 {
+  font-size: 29px;
+  position: relative;
+  top: 23px;
+}
+#experiencia .box3 .info h3 {
+  font-size: 29px;
+  position: relative;
+  top: 23px;
+}
+#experiencia .box1 .info p {
+  font-size: 13px;
+  position: relative;
+  bottom: 15px;
+}
+#experiencia .box2 .info p {
+  font-size: 13px;
+  position: relative;
+  bottom: 15px;
+}
+#experiencia .box3 .info p {
+  font-size: 13px;
+  position: relative;
+  bottom: 15px;
+}
+#experiencia .box1 .year {
+  color: #ffffff;
+  font-size: 26px;
+}
+#experiencia .box2 .year {
+  color: #ffffff;
+  font-size: 26px;
+}
+#experiencia .box3 .year {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+/*MIS HABILIDADES*/
+#mishabilidades {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+#mishabilidades h2 {
+  text-align: center;
+  font-size: 35px;
+  color: #ffffff;
+}
+#mishabilidades .contenido .porcentaje {
+  display: flex;
+  gap: 100px;
+  position: relative;
+  bottom: 50px;
+  right: 110px;
+  height: 110px;
+}
+#mishabilidades .contenido .porcentaje h3 {
+  color: #f1a600;
+  font-size: 70px;
+}
+#mishabilidades .contenido .porcentaje p {
+  color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  top: 90px;
+}
+#mishabilidades .cuadrado {
+  height: 630px;
+  width: 700px;
+  background-color: #242635;
+  position: relative;
+  left: -323px;
+}
+.global {
+  position: relative;
+}
+#mishabilidades .global .contenido {
+  position: absolute;
+  z-index: 10;
+}
+/*MI PORTAFOLIO*/
+#miportafolio {
+  margin: 10px;
+  padding: 100px;
+}
+#miportafolio h2 {
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff;
+  height: 80px;
+}
+#miportafolio .imges {
+  display: flex;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+#miportafolio .img1 {
+  position: relative;
+}
+#miportafolio .imgi {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#miportafolio .imgi img {
+  height: 377px;
+  width: 520px;
+}
+.boxii {
+  height: 370px;
+  width: 560px;
+  background-color: #f1a600;
+}
+#miportafolio .img2 {
+  position: relative;
+}
+#miportafolio .imigu img {
+  position: absolute;
+  height: 370px;
+  width: 494px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.boxuu {
+  height: 350px;
+  width: 530px;
+  background-color: #242635;
+}
+#miportafolio .img3 {
+  position: relative;
+  margin-top: 180px;
+  margin-left: 18px;
+}
+#miportafolio .imige .img {
+  position: absolute;
+  margin-left: 10px;
+}
+#miportafolio .img3 .imige img {
+  height: 390px;
+  width: 520px;
+}
+.boxee {
+  height: 370px;
+  width: 560px;
+  background-color: #f1a600;
+  margin-top: -410px;
+  margin-left: -20px;
+}
+/*FOOTER*/
+#footer {
+  padding: 0px;
+  margin: 0px;
+}
+#footer .fot {
+  background-color: #242635;
+  justify-content: center;
+}
+.fot h2 {
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+}
+#footer .container .number {
+  height: 230px;
+  width: 200px;
+  text-align: center;
+}
+.number img {
+  height: 80px;
+  width: 80px;
+}
+.number h3 {
+  color: #ffffff;
+  font-size: 22px;
+}
+.number p {
+  color: #ffffff;
+  margin-top: -15px;
+}
+#footer .container .email {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+.email img {
+  height: 80px;
+  width: 80px;
+}
+.email h3 {
+  color: #ffffff;
+  font-size: 22px;
+}
+.email p {
+  color: #ffffff;
+  margin-top: -15px;
+}
+/*FINAL*/
+.ultimo {
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+}
+
+/*RESPONSIVE*/
+/*992*/
+@media (min-width: 992px) {
+  #hero {
+    font-size:17px;
+    display: flex;
+    justify-content: end;
+    height: 10px;
+    width: 92%;
+    margin: 2px;
+    padding: 20px;
+  }
+  .padre .two img {
+    width: 400px;
+    height: 400px;
+  }
+  .padre .box {
+    height: 100%;
+    background-color: #242635;
+    position: relative;
+    left: 21.5%;
+  }
+
+}
+/*320*/
+@media (min-width: 320px) {
+  #hero {
+    height: 93%;
+  }
+}
