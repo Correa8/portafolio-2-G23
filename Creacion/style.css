@@ -115,7 +115,6 @@ header {
 /*ACERCA DE MI*/
 #acercami {
   text-align: center;
-  padding: 10px;
   margin: 0px;
 }
 #acercami h2 {
@@ -422,9 +421,27 @@ header {
   color: #ffffff;
   text-align: center;
   font-size: 13px;
+  height: 70px;
+  padding: 9px;
 }
 
+
+
+
+
 /*RESPONSIVE*/
+/*1076*/
+@media(min-width: 1076px){
+
+  header .padre .box {
+    height: 720px;
+    width: 430px;
+    background-color: #242635;
+    position: relative;
+    left: 25%;
+    margin-top: -122px;
+  }
+}
 /*992*/
 @media (max-width: 992px) {
   * {
@@ -439,17 +456,67 @@ header {
   header {
     height: 500px;
   }
+   header .padre .box {
+    height: 120%;
+    left: 23%; 
+  }
   .padre .two img {
     width: 400px;
     height: 400px;
+    margin-top: 10px;
   }
   .padre .box {
     height: 120%;
-    left: 21%;
-    overflow: hidden;
+    width:400px;
+    left: 10%;
+  }
+  /*ACERCA DE MI*/
+  #acercami .yeii{
+    height: 530px;
+  }
+  #acercami h2 {
+    font-size: 37px;
+  }
+  #acercami .acerca-de-mi {
+    font-size: 20px;
+  }
+   #acercami .boxing .name {
+    font-size: 20px;
+  }
+   #acercami .boxing .fecha {
+    font-size: 14px;
+  }
+  #acercami .box2 img {
+    height: 130px;
+    width: 140px;
+  }
+  #acercami .box1 img {
+    height: 130px;
+    width: 140px;
+  }
+  /*EXPERIENCIA*/
+  #experiencia h2 {
+    font-size: 37px;
+  }
+  /*MIS HABILIDADES*/
+  #mishabilidades h2 {
+    font-size: 37px;
   }
   #mishabilidades .contenido .porcentaje {
-    right: -20px;
+    display: flex;
+    gap: 100px;
+    position: relative;
+    bottom: 30px;
+    right: -30px;
+    height: 110px;
+  }
+  #mishabilidades .contenido .porcentaje h3 {
+    font-size: 60px;
+  }
+  #mishabilidades .contenido .porcentaje p {
+    font-size: 28px;
+    position: relative;
+    top: 55px;
   }
   /*PORTAFOLIO*/
   #miportafolio {
@@ -489,6 +556,7 @@ header {
     margin-top: -270px;
   }
 }
+
 /*728*/
 @media (max-width: 728px) {
   * {
@@ -530,7 +598,7 @@ header {
   .padre .box {
     height: 120%;
     width: 280px;
-    left: 17%;
+    left: 15%;
   }
   #mishabilidades .contenido .porcentaje {
     right: -5px;
@@ -631,6 +699,28 @@ header {
   #experiencia .box3 .year {
     font-size: 21px;
   }
+  /*MIS HABILIDADES*/
+  #mishabilidades h2 {
+    font-size: 30px;
+    margin-left: 150px;
+  }
+  #mishabilidades .contenido .porcentaje {
+    display: flex;
+    gap: 100px;
+    position: relative;
+    bottom: 0px;
+    right: -150px;
+    height: 110px;
+  }
+  #mishabilidades .contenido .porcentaje h3 {
+    font-size: 40px;
+  }
+  #mishabilidades .contenido .porcentaje p {
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+  }
   /*PORTAFOLIO*/
   #miportafolio {
     padding: 0;
@@ -667,6 +757,45 @@ header {
     height:275px;
     width: 500px;
     margin-top: -320px;
+  }
+  /*CONTACTO*/
+  .fot h2 {
+    font-size: 30px;
+  }
+  .container {
+    gap: 100px;
+  }
+  #footer .container .number {
+    font-size: 14px;
+  }
+  .number img {
+    height: 70px;
+    width: 70px;
+  }
+  .number h3 {
+    color: #ffffff;
+    font-size: 22px;
+  }
+  .number p {
+    color: #ffffff;
+    margin-top: -15px;
+  }
+  #footer .container .email {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .email img {
+    height: 70px;
+    width: 70px;
+  }
+  .email h3 {
+    color: #ffffff;
+    font-size: 22px;
+  }
+  .email p {
+    color: #ffffff;
+    margin-top: -15px;
   }
 }
 /*320*/
