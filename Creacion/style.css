@@ -15,10 +15,13 @@ body {
   padding: 0px;
   font-family: "Inter", sans-serif;
   background-color: #1f1d2c;
-  margin: 0;
+  margin: 0px;
 }
 
 /*NAV*/
+#hero button {
+  display: none;
+}
 #hero {
   font-size: larger;
   display: flex;
@@ -87,7 +90,7 @@ header {
 }
 .padre .box {
   height: 720px;
-  width: 415px;
+  width: 430px;
   background-color: #242635;
   position: relative;
   left: 29%;
@@ -238,15 +241,15 @@ header {
 }
 #experiencia .box1 .year {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 30px;
 }
 #experiencia .box2 .year {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 30px;
 }
 #experiencia .box3 .year {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 /*MIS HABILIDADES*/
@@ -270,7 +273,7 @@ header {
 }
 #mishabilidades .contenido .porcentaje h3 {
   color: #f1a600;
-  font-size: 70px;
+  font-size: 80px;
 }
 #mishabilidades .contenido .porcentaje p {
   color: #ffffff;
@@ -423,30 +426,254 @@ header {
 
 /*RESPONSIVE*/
 /*992*/
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+  * {
+    padding: 0;
+  }
+  #hero button {
+    display: none;
+  }
   #hero {
-    font-size:17px;
-    display: flex;
-    justify-content: end;
-    height: 10px;
-    width: 92%;
-    margin: 2px;
-    padding: 20px;
+    font-size: 17px;
+  }
+  header {
+    height: 500px;
   }
   .padre .two img {
     width: 400px;
     height: 400px;
   }
   .padre .box {
-    height: 100%;
-    background-color: #242635;
-    position: relative;
-    left: 21.5%;
+    height: 120%;
+    left: 21%;
+    overflow: hidden;
   }
-
+  #mishabilidades .contenido .porcentaje {
+    right: -20px;
+  }
+  /*PORTAFOLIO*/
+  #miportafolio {
+    padding: 0;
+    margin: 90px;
+  }
+  #miportafolio .imges {
+    gap: 17px;
+  }
+  /*1°*/
+  #miportafolio .imgi img {
+    height: 240px;
+    width: 150%;
+  }
+  .boxii {
+    height: 235px;
+    width: 400px;
+  }
+  /*2°*/
+  #miportafolio .imigu img {
+    height: 235px;
+    width: 90%;
+  }
+  .boxuu {
+    height: 220px;
+    width: 380px;
+  }
+  /*3°*/
+  #miportafolio .img3 .imige img {
+    height: 250px;
+    width: 360px;
+    margin-top: -40px;
+  }
+  .boxee {
+    height: 220px;
+    width: 400px;
+    margin-top: -270px;
+  }
+}
+/*728*/
+@media (max-width: 728px) {
+  * {
+    padding: 0;
+  }
+  /*NAV Y HEADER*/
+  #hero button {
+    display: none;
+  }
+  #hero {
+    font-size: 13px;
+    margin-left: 55px;
+  }
+  header {
+    height: 430px;
+    padding: 0;
+    margin: 0;
+  }
+  .one h1 {
+    font-size: 3rem;
+  }
+  .one .parrafo1 {
+    font-size:25px;
+  }
+  .one .parrafo2 {
+    font-size: 22px;
+  }
+  .one .iconitos {
+    font-size: 30px;
+    right: 50px;
+  }
+  .padre .two img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0%;
+    margin-top: 30px;
+  }
+  .padre .box {
+    height: 120%;
+    width: 280px;
+    left: 17%;
+  }
+  #mishabilidades .contenido .porcentaje {
+    right: -5px;
+  }
+  /*ACERCA DE MI*/
+  #acercami .yeii{
+    height: 430px;
+  }
+  #acercami h2 {
+    font-size: 30px;
+  }
+  #acercami .acerca-de-mi {
+    font-size: 15px;
+  }
+  #acercami p {
+    font-size: 19px;
+  }
+   #acercami .boxing .name {
+    font-size: 17px;
+  }
+   #acercami .boxing .fecha {
+    font-size: 14px;
+  }
+  #acercami .box2 img {
+    height: 120px;
+    width: 130px;
+    font-size: 100%;
+  }
+  #acercami .box1 img {
+    height: 120px;
+    width: 130px;
+  }
+  /*EXPERIENCIA*/
+  #experiencia .box1 {
+    gap: 120px;
+  }
+  #experiencia .box2 {
+    gap: 120px;
+  }
+  #experiencia .box3 {
+    gap: 100px;
+  }
+  #experiencia h2 {
+    font-size: 30px;
+  }
+  #experiencia .box1 img {
+    height: 100px;
+  }
+  #experiencia .box2 img {
+    height: 100px;
+  }
+  #experiencia .box3 img {
+    height: 100px;
+  }
+  #experiencia .box1 .info {
+    position: relative;
+    left: -70px;
+  }
+  #experiencia .box2 .info {
+    position: relative;
+    left: -70px;
+  }
+  #experiencia .box3 .info {
+    position: relative;
+    left: -50px;
+    bottom: 40px;
+  }
+  #experiencia .box1 .info h3 {
+    font-size: 23px;
+    position: relative;
+    top: 25px;
+  }
+  #experiencia .box2 .info h3 {
+    font-size: 23px;
+    position: relative;
+    top: 23px;
+  }
+  #experiencia .box3 .info h3 {
+    font-size: 23px;
+    position: relative;
+    top: 23px;
+  }
+  #experiencia .box1 .info p {
+    font-size: 12px;
+  }
+  #experiencia .box2 .info p {
+    font-size: 13px;
+  }
+  #experiencia .box3 .info p {
+    font-size: 13px;
+  }
+  #experiencia .box1  .year {
+    font-size: 21px;
+  }
+  #experiencia .box2 .year {
+    font-size: 21px;
+  }
+  #experiencia .box3 .year {
+    font-size: 21px;
+  }
+  /*PORTAFOLIO*/
+  #miportafolio {
+    padding: 0;
+    margin: 120px;
+  }
+  #miportafolio .imges {
+    gap: 100px;
+  }
+  /*1°*/
+  #miportafolio .imgi img {
+    height: 310px;
+    width: 147%;
+  }
+  .boxii {
+    height:300px;
+    width: 495px;
+  }
+  /*2°*/
+  #miportafolio .imigu img {
+    height: 330px;
+    width: 92%;
+  }
+  .boxuu {
+    height: 310px;
+    width: 500px;
+  }
+  /*3°*/
+  #miportafolio .img3 .imige img {
+    height: 300px;
+    width: 460px;
+    margin-top: -50px;
+  }
+  .boxee {
+    height:275px;
+    width: 500px;
+    margin-top: -320px;
+  }
 }
 /*320*/
-@media (min-width: 320px) {
+@media (max-width: 320px) {
+  #hero button {
+    display: inline-flex;
+  }
   #hero {
     height: 93%;
   }
