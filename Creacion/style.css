@@ -26,7 +26,7 @@ body {
   font-size: larger;
   display: flex;
   justify-content: end;
-  height: 10px;
+  height: 0px;
   width: 90%;
   margin: 2px;
   padding: 20px;
@@ -450,21 +450,19 @@ header {
   }
   header {
     height: 500px;
+    margin: 0;
   }
   header .padre .box {
     height: 120%;
-    left: 23%;
+    left: 7%;
+    overflow: hidden;
   }
   .padre .two img {
     width: 400px;
     height: 400px;
     margin-top: 10px;
   }
-  .padre .box {
-    height: 120%;
-    width: 400px;
-    left: 10%;
-  }
+
   /*ACERCA DE MI*/
   #acercami .yeii {
     height: 530px;
@@ -697,7 +695,6 @@ header {
   /*MIS HABILIDADES*/
   #mishabilidades h2 {
     font-size: 30px;
-    margin-left: 150px;
   }
   #mishabilidades .contenido .porcentaje {
     display: flex;
@@ -719,7 +716,7 @@ header {
   /*PORTAFOLIO*/
   #miportafolio {
     padding: 0;
-    margin: 120px;
+    margin: 10px;
   }
   #miportafolio .imges {
     gap: 100px;
@@ -794,72 +791,108 @@ header {
   }
 }
 /*570*/
-@media (max-width: 570px) {
- 
+@media (max-width: 576px) {
+  * {
+    padding: 0;
+  }
   #hero .nav-button {
     color: #e5e5e5;
-    display: flex;
-    justify-content: flex-end;
+    display: block;
+    justify-content: flex-start;
     padding: 0;
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     border: none;
   }
-  /*HEADER*/
-  header {
-    display: block;
-    flex-direction: column;
-    margin: 50px;
-    height: 630px;
-    /* overflow: hidden;*/
+  #hero a {
+    font-size: 20px;
   }
-  .one {
+  #hero{
+    
+  }
+  #hero .menu{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    background-color:#838fe7;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0px;
+    height: 100%;
+    overflow-y: auto;
+   /* left: 100%;*/
+  }
+  #hero .lista{
+   line-height: 60px;
+   list-style: none;
+  }
+  #hero .casa{
+    color: #e5e5e5;
+  }
+  #hero .navi{
+    color: #1f1d2c;
+  }
+  /*HEADER*/
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 600px;
+      overflow: hidden;
+  }
+  header .padre {
+    margin: 0;
+  }
+  .one {
+    display: block;
   }
   .one h1 {
     font-size: 20px;
     height: 0px;
-    color: #ffffff;
   }
   .one .parrafo1 {
     font-size: 15px;
-    height: 50px;
-    color: #ffffff;
+    height: 40px;
   }
   .one .parrafo2 {
+    font-size: 10px;
     font-size: 15px;
-    color: #ffffff;
   }
-  .one .iconitos {
+ .header .one .iconitos {
     display: flex;
     justify-content: space-evenly;
     font-size: 15px;
     position: relative;
-    right: 30px;
+    right: 0px;
+    top: 50px;
+    gap: 30px;
+   
   }
   header .padre .box {
-    height: 100px;
-    width: 100px;
-    background-color: #242635;
+    height: 400px;
+    width: 200px;
     position: relative;
-    left: -8%;
-    margin-top: -122px;
+    left: 45%;
+    
   }
   .padre {
     position: relative;
   }
   header .padre .two img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    left: 0%;
+    left: 20%;
     margin-top: 30px;
     z-index: 10;
   }
   /*ACERCA DE MI*/
   #acercami .yeii {
     height: 530px;
+    margin: 0px;
+    padding: 0px;
   }
   #acercami h2 {
     font-size: 25px;
@@ -889,17 +922,17 @@ header {
   #experiencia .box1 {
     gap: 100px;
     margin-top: -50px;
-    margin-left: 40%;
+    margin-left: 20%;
   }
   #experiencia .box2 {
     gap: 114px;
     margin-top: -50px;
-    margin-left: 40%;
+    margin-left: 25%;
   }
   #experiencia .box3 {
     gap: 100px;
     margin-top: -50px;
-    margin-left: 35%;
+    margin-left: 20%;
   }
   #experiencia h2 {
     font-size: 25px;
@@ -986,40 +1019,37 @@ header {
     right: 90px;
   }
   /*MIS HABILIDADES*/
+  #mishabilidades .global {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
   #mishabilidades h2 {
     font-size: 25px;
-    margin-left: 265px;
+  }
+  #mishabilidades .cuadrado {
+    height: 600px;
+    width: 550px;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #mishabilidades .contenido .porcentaje {
-    display: flex;
-    gap: 40px;
+
+    gap: 30px;
     position: relative;
     bottom: 0px;
-    right: -200px;
+    right: -50px;
     height: 110px;
+   
   }
   #mishabilidades .contenido .porcentaje h3 {
     font-size: 30px;
   }
   #mishabilidades .contenido .porcentaje p {
-    color: #ffffff;
     font-size: 17px;
     position: relative;
-    top: 30px;
-  }
-  #hero {
-    font-size: 7px;
-    display: flex;
-    justify-content: start;
-    height: 10px;
-    width: 90%;
-    margin: 2px;
-    padding: 20px;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-    gap: 2rem;
-    margin-top: 20px;
+    top: 20px;
   }
   /*MI PORTAFOLIO*/
   #miportafolio {
@@ -1027,8 +1057,8 @@ header {
     margin: 15px;
     height: 1040px;
   }
-  #miportafolio h2{
-   font-size: 25px;
+  #miportafolio h2 {
+    font-size: 25px;
   }
   #miportafolio .imges {
     gap: 100px;
@@ -1039,7 +1069,7 @@ header {
     width: 140%;
   }
   .boxii {
-    height:200px;
+    height: 200px;
     width: 320px;
   }
   /*2°*/
@@ -1063,12 +1093,16 @@ header {
     margin-top: -540px;
   }
   /*CONTACTO*/
+  #footer {
+  }
   .fot h2 {
     font-size: 25px;
+    justify-content: start;
   }
-  #footer .container{
+  #footer .container {
     display: block;
-    align-content: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .container {
     gap: 100px;
@@ -1081,28 +1115,16 @@ header {
     width: 50px;
   }
   .number h3 {
-    color: #ffffff;
     font-size: 17px;
-  }
-  .number p {
-    color: #ffffff;
-    margin-top: -15px;
-  }
-  #footer .container .email {
-    height: 200px;
-    width: 200px;
-    text-align: center;
   }
   .email img {
     height: 50px;
     width: 50px;
   }
   .email h3 {
-    color: #ffffff;
     font-size: 17px;
   }
   .email p {
-    color: #ffffff;
     margin-top: -15px;
   }
 }
