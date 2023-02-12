@@ -25,7 +25,7 @@ body {
 #hero .menu {
   display: flex;
   flex-direction: row;
-  gap:2rem;
+  gap: 2rem;
   list-style-type: none;
 }
 #hero {
@@ -578,10 +578,14 @@ header {
     gap: 30px;
     text-decoration: none;
     list-style-type: none;
+    position: relative;
+    z-index: 10;
   }
   #hero {
     font-size: 14px;
     margin-left: 55px;
+    position: relative;
+    z-index: 10;
   }
   header {
     height: 430px;
@@ -590,16 +594,24 @@ header {
   }
   .one h1 {
     font-size: 3rem;
+    position: relative;
+    z-index: 10;
   }
   .one .parrafo1 {
     font-size: 25px;
+    position: relative;
+    z-index: 10;
   }
   .one .parrafo2 {
     font-size: 22px;
+    position: relative;
+    z-index: 10;
   }
   .one .iconitos {
     font-size: 30px;
     right: 50px;
+    position: relative;
+    z-index: 10;
   }
   .padre .two img {
     width: 300px;
@@ -608,10 +620,12 @@ header {
     left: 0%;
     margin-top: 30px;
   }
-  .padre .box {
-    height: 120%;
-    width: 280px;
-    left: 15%;
+  .header .padre .box {
+    height: 400px;
+    width: 500px;
+    position: relative;
+    left: 30%;
+   top: -90%;
   }
   #mishabilidades .contenido .porcentaje {
     right: -5px;
@@ -813,10 +827,10 @@ header {
 /*570*/
 @media (max-width: 576px) {
   * {
-    padding: 0;
+    padding: 0px;
   }
-  #hero{
-    padding: 10px;
+  #hero {
+    padding: 0px;
     margin-left: 50px;
     margin-top: 17px;
   }
@@ -824,10 +838,13 @@ header {
     color: #e5e5e5;
     display: block;
     justify-content: flex-start;
-    padding: 0;
+    padding: 0px;
     font-size: 30px;
     cursor: pointer;
     border: none;
+    position: fixed;
+    margin-left: -300px;
+    position: fixed;
   }
   #hero a {
     font-size: 20px;
@@ -839,20 +856,17 @@ header {
     margin-right: 40px;
     background-color: #838fe7;
     position: fixed;
-    top: 10px;
     width: 100%;
     top: 60px;
-    padding: 20px 0px;
     height: 100%;
     overflow-y: auto;
     left: 100%;
-    z-index: 10;
   }
   #hero .visible {
     left: 0;
   }
   #hero .lista {
-    line-height: 60px;
+    line-height: 140px;
     list-style: none;
   }
   #hero .casa {
@@ -865,7 +879,7 @@ header {
   .header {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 40px;
     height: 600px;
     overflow: hidden;
   }
@@ -876,28 +890,23 @@ header {
     font-size: 40px;
     display: flex;
     flex-direction: row;
-    margin-left: 30%;
+    margin-left: 10%;
   }
   .one .parrafo1 {
     font-size: 15px;
-    margin-left: 30%;
+    margin-left: 10%;
   }
   .one .parrafo2 {
     font-size: 15px;
-    margin-left: 30%;
+    margin-left: 10%;
   }
   .header .one .iconitos {
     display: flex;
-    justify-content: space-evenly;
     font-size: 15px;
     position: relative;
-    
   }
-  header .padre .box {
-    height: 400px;
-    width: 400px;
-    position: relative;
-    left: 65%;
+  .header .one .iconitos .icons{
+    margin-left: 70px;
   }
   .padre {
     position: relative;
@@ -906,13 +915,20 @@ header {
     width: 300px;
     height: 300px;
     position: absolute;
-    left: 20%;
+    left: 10%;
     margin-top: 30px;
     z-index: 10;
+  }
+  .header .padre .box {
+    height: 500px;
+    width: 240px;
+    position: relative;
+ 
   }
   /*ACERCA DE MI*/
   #acercami .yeii {
     height: 530px;
+    width: 500px;
     margin: 0px;
     padding: 0px;
   }
@@ -1123,6 +1139,8 @@ header {
     display: block;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    left:30%;
   }
   .container {
     gap: 100px;
