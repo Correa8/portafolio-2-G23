@@ -625,7 +625,7 @@ header {
     width: 500px;
     position: relative;
     left: 30%;
-   top: -90%;
+    top: -90%;
   }
   #mishabilidades .contenido .porcentaje {
     right: -5px;
@@ -835,16 +835,18 @@ header {
     margin-top: 17px;
   }
   #hero .nav-toggle {
-    color: #e5e5e5;
+    color: #e4cece;
     display: block;
-    justify-content: flex-start;
+    justify-content: flex-end;
     padding: 0px;
-    font-size: 30px;
+    font-size: 45px;
     cursor: pointer;
     border: none;
     position: fixed;
     margin-left: -300px;
-    position: fixed;
+    background-color: #1f1d2c;
+    position: relative;
+    left: -80px;
   }
   #hero a {
     font-size: 20px;
@@ -856,7 +858,7 @@ header {
     margin-right: 40px;
     background-color: #838fe7;
     position: fixed;
-    width: 100%;
+    width: 50%;
     top: 60px;
     height: 100%;
     overflow-y: auto;
@@ -879,7 +881,7 @@ header {
   .header {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 0px;
     height: 600px;
     overflow: hidden;
   }
@@ -905,8 +907,9 @@ header {
     font-size: 15px;
     position: relative;
   }
-  .header .one .iconitos .icons{
-    margin-left: 70px;
+  .header .one .iconitos .icons {
+    margin-left: -20px;
+    font-size: 28px;
   }
   .padre {
     position: relative;
@@ -922,8 +925,7 @@ header {
   .header .padre .box {
     height: 500px;
     width: 240px;
-    position: relative;
- 
+  
   }
   /*ACERCA DE MI*/
   #acercami .yeii {
@@ -1140,7 +1142,7 @@ header {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    left:30%;
+    left: 30%;
   }
   .container {
     gap: 100px;
